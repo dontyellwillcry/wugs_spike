@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
 
     const options = {
         method: 'GET',
-        url: 'https://api.calendly.com/users/dontyellwillcry',
+        url: 'https://api.calendly.com/users/me',
         headers: {'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}`}
       };
 
