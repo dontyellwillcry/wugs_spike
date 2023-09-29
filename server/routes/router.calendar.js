@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const axios = require('axios')
 
-const pool = require('../modules/pool')
 
 router.get('/', (req, res) => {
     console.log("My giphy api key:", process.env.CALENDLY_API_KEY)
@@ -17,6 +16,8 @@ router.get('/', (req, res) => {
 
     axios.request(options).then(function (response) {
         console.log("here is the Data", response.data);
+        res.send(response.data)
+
       }).catch(function (error) {
         console.error(error);
       });
