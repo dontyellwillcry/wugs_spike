@@ -16,7 +16,7 @@ router.get('/', (req, res) => {
 
 
     axios.request(options).then(function (response) {
-        console.log(response.data);
+        console.log("here is the Data", response.data);
       }).catch(function (error) {
         console.error(error);
       });
