@@ -9,7 +9,7 @@ app.use(bodyParser.json()); // needed for angular requests
 app.use(express.static('build'));
 
 /** ---------- ROUTES ---------- **/
-app.use('/api/movie', calendarRouter);
+app.use('/api/calendar', calendarRouter);
 
 /** ---------- START SERVER ---------- **/
 app.listen(port, function () {
