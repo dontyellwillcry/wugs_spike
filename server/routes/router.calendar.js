@@ -4,7 +4,7 @@ const axios = require('axios')
 
 
 router.get('/', (req, res) => {
-    console.log("My giphy api key:", process.env.CALENDLY_API_KEY)
+    // console.log("My giphy api key:", process.env.CALENDLY_API_KEY)
     const apiKey = process.env.CALENDLY_API_KEY
 
     const options = {
